@@ -10,10 +10,12 @@ import Foundation
 protocol GameListProtocol: AnyObject {
     func gameList(data: [GameOneStruct])
     func news(data: [OnceNews])
+    func noData()
 }
 extension GameListProtocol {
     func gameList(data: [GameOneStruct]) {}
     func news(data: [OnceNews]) {}
+    func noData() {}
 }
 
 final class GameInteractor {
@@ -34,9 +36,15 @@ final class GameInteractor {
         let url = newsUrl + "\(id)"
         APIManager.loadDataGET(structData: NewsStruct.self, url: url, inputData: nil) { data in
             if let data = data {
-                self.delegateGameList?.news(data: data.appnews.newsitems)
+                if data.appnews.newsitems.count > 0 {
+                    self.delegateGameList?.news(data: data.appnews.newsitems)
+                } else {
+                    Alerts.noData()
+                    self.delegateGameList?.noData()
+                }
             } else {
                 Alerts.noConnectServer()
+                self.delegateGameList?.noData()
             }
         }
     }

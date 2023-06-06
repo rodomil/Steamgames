@@ -26,9 +26,15 @@ class NewsGameVC: UIViewController {
         
     //MARK: - UI
     private lazy var table = UITableView().then() {
-          $0.register(NewsCell.self, forCellReuseIdentifier: NewsCell.identifier)
-          $0.backgroundColor = .black
-      }
+        $0.register(NewsCell.self, forCellReuseIdentifier: NewsCell.identifier)
+        $0.backgroundColor = .black
+    }
+    
+    private lazy var dataRefresher = UIRefreshControl().then() {
+            $0.attributedTitle = NSAttributedString(string: "Refresh")
+            $0.tintColor = .white
+            $0.addTarget(self, action: #selector(update), for: .valueChanged)
+        }
 
     //MARK: - var
     var id = 0
@@ -51,6 +57,7 @@ class NewsGameVC: UIViewController {
         
         table.dataSource = self
         table.delegate = self
+        table.refreshControl = dataRefresher
         
         interactor.loadNew(id: id)
         interactor.delegateGameList = self
@@ -74,6 +81,11 @@ class NewsGameVC: UIViewController {
             make.top.equalToSuperview().offset(100)
         }
     }
+    
+    //MARK: - Action
+    @objc private func update() {
+        interactor.loadNew(id: id)
+    }
 }
 
 extension NewsGameVC: UITableViewDataSource, UITableViewDelegate {
@@ -84,6 +96,7 @@ extension NewsGameVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsCell.identifier) as! NewsCell
         cell.initCell(item: dataTabel[indexPath.row])
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -104,5 +117,12 @@ extension NewsGameVC: GameListProtocol {
     func news(data: [OnceNews]) {
         dataTabel = data
         table.reloadData()
+    }
+    
+    func noData() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.dismiss(animated: true)
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 }

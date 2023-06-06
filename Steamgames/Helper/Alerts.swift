@@ -36,5 +36,11 @@ class Alerts {
         }
     }
     
+    static func noData() {
+        DispatchQueue.main.async {
+            Alerts.activeView().present(Alerts.all(title: "Внимание", message: "Здесь еще ничего нет.", style: .alert), animated: true, completion: nil)
+        }
+    }
+    
         
 }

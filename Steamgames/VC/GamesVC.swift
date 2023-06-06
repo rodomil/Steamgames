@@ -35,12 +35,11 @@ class GamesVC: UIViewController {
     
     private lazy var search = UISearchBar().then() {
         $0.barTintColor = .black
-        $0.backgroundColor = .black
+        $0.backgroundColor = .white
         UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
     
-    //1
-    lazy var dataRefresher = UIRefreshControl().then() {
+    private lazy var dataRefresher = UIRefreshControl().then() {
         $0.attributedTitle = NSAttributedString(string: "Refresh")
         $0.tintColor = .white
         $0.addTarget(self, action: #selector(update), for: .valueChanged)
@@ -142,6 +141,7 @@ extension GamesVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GameCell.identifier) as! GameCell
         searchActive ? cell.initCell(name: filtered[indexPath.row].name) : cell.initCell(name: dataTabel[indexPath.row].name)
+        cell.selectionStyle = .none
         return cell
     }
     
@@ -160,17 +160,18 @@ extension GamesVC: UITableViewDataSource, UITableViewDelegate {
 extension GamesVC: GameListProtocol {
     func gameList(data: [GameOneStruct]) {
         dataTabel = data
-        table.reloadData()dataRefresher.endRefreshing()
+        table.reloadData()
+        dataRefresher.endRefreshing()
     }
 }
 
 extension GamesVC: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        filtered = dataTabel.filter({ (item) -> Bool in
+        filtered = dataTabel.filter { item in
             let tmp = item.name
-            return searchText.range(of: tmp, options: .caseInsensitive) != nil
-        })
+            return   tmp.lowercased().contains(searchText.lowercased())
+        }
 
         if searchText.isEmpty {
             searchActive = false;
