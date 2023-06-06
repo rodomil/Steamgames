@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C84C04202786C52B6490EC72 /* Pods_Steamgames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B02DFF578106442FC6A1C98 /* Pods_Steamgames.framework */; };
+		C90B55B32A24ADD3003C6C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55B22A24ADD3003C6C82 /* AppDelegate.swift */; };
+		C90B55B52A24ADD3003C6C82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55B42A24ADD3003C6C82 /* SceneDelegate.swift */; };
+		C90B55BC2A24ADD4003C6C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90B55BB2A24ADD4003C6C82 /* Assets.xcassets */; };
+		C90B55BF2A24ADD4003C6C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90B55BD2A24ADD4003C6C82 /* LaunchScreen.storyboard */; };
+		C90B55C72A24AE54003C6C82 /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55C62A24AE54003C6C82 /* GamesVC.swift */; };
+		C90B55D22A24AF5F003C6C82 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55D02A24AF5F003C6C82 /* UIViewController+Extension.swift */; };
+		C90B55D32A24AF5F003C6C82 /* UIViewCintroller+AnimateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55D12A24AF5F003C6C82 /* UIViewCintroller+AnimateView.swift */; };
+		C90B55D72A24AF69003C6C82 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55D42A24AF69003C6C82 /* Grid.swift */; };
+		C90B55D82A24AF69003C6C82 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55D52A24AF69003C6C82 /* Appearance.swift */; };
+		C90B55D92A24AF69003C6C82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55D62A24AF69003C6C82 /* Constants.swift */; };
+		C90B55DE2A24AFDB003C6C82 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55DD2A24AFDB003C6C82 /* APIManager.swift */; };
+		C90B55E22A24B361003C6C82 /* UIView + GAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55E02A24B361003C6C82 /* UIView + GAC.swift */; };
+		C90B55E32A24B361003C6C82 /* UIView+Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55E12A24B361003C6C82 /* UIView+Add.swift */; };
+		C90B55E62A24B571003C6C82 /* GameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55E52A24B571003C6C82 /* GameCell.swift */; };
+		C90B55E82A24B65B003C6C82 /* GameListStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55E72A24B65B003C6C82 /* GameListStruct.swift */; };
+		C90B55EA2A24B706003C6C82 /* GameInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55E92A24B706003C6C82 /* GameInteractor.swift */; };
+		C90B55EC2A24B79A003C6C82 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55EB2A24B79A003C6C82 /* URLs.swift */; };
+		C90B55EE2A24B890003C6C82 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55ED2A24B890003C6C82 /* Alerts.swift */; };
+		C90B55F02A24CBFA003C6C82 /* NewsGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55EF2A24CBFA003C6C82 /* NewsGameVC.swift */; };
+		C90B55F22A24CD99003C6C82 /* NewsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55F12A24CD99003C6C82 /* NewsStruct.swift */; };
+		C90B55F42A24D126003C6C82 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55F32A24D126003C6C82 /* NewsCell.swift */; };
+		C90B55F62A24D481003C6C82 /* DateFormated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55F52A24D481003C6C82 /* DateFormated.swift */; };
+		C90B55FA2A24DFF6003C6C82 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90B55F92A24DFF6003C6C82 /* WebVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B02DFF578106442FC6A1C98 /* Pods_Steamgames.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Steamgames.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		755310DB8C96D6E9F0CD63DE /* Pods-Steamgames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steamgames.debug.xcconfig"; path = "Target Support Files/Pods-Steamgames/Pods-Steamgames.debug.xcconfig"; sourceTree = "<group>"; };
+		C90B55AF2A24ADD3003C6C82 /* Steamgames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steamgames.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90B55B22A24ADD3003C6C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C90B55B42A24ADD3003C6C82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C90B55BB2A24ADD4003C6C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C90B55BE2A24ADD4003C6C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C90B55C02A24ADD4003C6C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90B55C62A24AE54003C6C82 /* GamesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
+		C90B55D02A24AF5F003C6C82 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C90B55D12A24AF5F003C6C82 /* UIViewCintroller+AnimateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewCintroller+AnimateView.swift"; sourceTree = "<group>"; };
+		C90B55D42A24AF69003C6C82 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		C90B55D52A24AF69003C6C82 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		C90B55D62A24AF69003C6C82 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C90B55DD2A24AFDB003C6C82 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C90B55E02A24B361003C6C82 /* UIView + GAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + GAC.swift"; sourceTree = "<group>"; };
+		C90B55E12A24B361003C6C82 /* UIView+Add.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Add.swift"; sourceTree = "<group>"; };
+		C90B55E52A24B571003C6C82 /* GameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCell.swift; sourceTree = "<group>"; };
+		C90B55E72A24B65B003C6C82 /* GameListStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListStruct.swift; sourceTree = "<group>"; };
+		C90B55E92A24B706003C6C82 /* GameInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInteractor.swift; sourceTree = "<group>"; };
+		C90B55EB2A24B79A003C6C82 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		C90B55ED2A24B890003C6C82 /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		C90B55EF2A24CBFA003C6C82 /* NewsGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsGameVC.swift; sourceTree = "<group>"; };
+		C90B55F12A24CD99003C6C82 /* NewsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStruct.swift; sourceTree = "<group>"; };
+		C90B55F32A24D126003C6C82 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		C90B55F52A24D481003C6C82 /* DateFormated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormated.swift; sourceTree = "<group>"; };
+		C90B55F92A24DFF6003C6C82 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		EB1735C0E710F106A780F3E3 /* Pods-Steamgames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Steamgames.release.xcconfig"; path = "Target Support Files/Pods-Steamgames/Pods-Steamgames.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C90B55AC2A24ADD3003C6C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C84C04202786C52B6490EC72 /* Pods_Steamgames.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3334C4A17BDA4BC57B4EE79A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B02DFF578106442FC6A1C98 /* Pods_Steamgames.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86EDB1590A9B32D832A550AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				755310DB8C96D6E9F0CD63DE /* Pods-Steamgames.debug.xcconfig */,
+				EB1735C0E710F106A780F3E3 /* Pods-Steamgames.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C90B55A62A24ADD3003C6C82 = {
+			isa = PBXGroup;
+			children = (
+				C90B55B12A24ADD3003C6C82 /* Steamgames */,
+				C90B55B02A24ADD3003C6C82 /* Products */,
+				86EDB1590A9B32D832A550AE /* Pods */,
+				3334C4A17BDA4BC57B4EE79A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C90B55B02A24ADD3003C6C82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55AF2A24ADD3003C6C82 /* Steamgames.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90B55B12A24ADD3003C6C82 /* Steamgames */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55DA2A24AF99003C6C82 /* Helper */,
+				C90B55CC2A24AE8B003C6C82 /* Managers */,
+				C90B55CA2A24AE7D003C6C82 /* Data */,
+				C90B55CE2A24AF08003C6C82 /* Extensions */,
+				C90B55C92A24AE77003C6C82 /* VC */,
+				C90B55C82A24AE63003C6C82 /* Source */,
+				C90B55C02A24ADD4003C6C82 /* Info.plist */,
+			);
+			path = Steamgames;
+			sourceTree = "<group>";
+		};
+		C90B55C82A24AE63003C6C82 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55B42A24ADD3003C6C82 /* SceneDelegate.swift */,
+				C90B55BD2A24ADD4003C6C82 /* LaunchScreen.storyboard */,
+				C90B55B22A24ADD3003C6C82 /* AppDelegate.swift */,
+				C90B55BB2A24ADD4003C6C82 /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C90B55C92A24AE77003C6C82 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55E42A24B559003C6C82 /* Cells */,
+				C90B55C62A24AE54003C6C82 /* GamesVC.swift */,
+				C90B55EF2A24CBFA003C6C82 /* NewsGameVC.swift */,
+				C90B55E92A24B706003C6C82 /* GameInteractor.swift */,
+				C90B55F92A24DFF6003C6C82 /* WebVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		C90B55CA2A24AE7D003C6C82 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55CD2A24AEE3003C6C82 /* SnapKit */,
+				C90B55CB2A24AE83003C6C82 /* Structs */,
+				C90B55EB2A24B79A003C6C82 /* URLs.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C90B55CB2A24AE83003C6C82 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55E72A24B65B003C6C82 /* GameListStruct.swift */,
+				C90B55F12A24CD99003C6C82 /* NewsStruct.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		C90B55CC2A24AE8B003C6C82 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55DD2A24AFDB003C6C82 /* APIManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C90B55CD2A24AEE3003C6C82 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55D52A24AF69003C6C82 /* Appearance.swift */,
+				C90B55D62A24AF69003C6C82 /* Constants.swift */,
+				C90B55D42A24AF69003C6C82 /* Grid.swift */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		C90B55CE2A24AF08003C6C82 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55CF2A24AF47003C6C82 /* UIViewController */,
+				C90B55F52A24D481003C6C82 /* DateFormated.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C90B55CF2A24AF47003C6C82 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55D12A24AF5F003C6C82 /* UIViewCintroller+AnimateView.swift */,
+				C90B55D02A24AF5F003C6C82 /* UIViewController+Extension.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		C90B55DA2A24AF99003C6C82 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55ED2A24B890003C6C82 /* Alerts.swift */,
+				C90B55DF2A24B348003C6C82 /* UIView */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C90B55DF2A24B348003C6C82 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55E02A24B361003C6C82 /* UIView + GAC.swift */,
+				C90B55E12A24B361003C6C82 /* UIView+Add.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		C90B55E42A24B559003C6C82 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C90B55E52A24B571003C6C82 /* GameCell.swift */,
+				C90B55F32A24D126003C6C82 /* NewsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C90B55AE2A24ADD3003C6C82 /* Steamgames */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90B55C32A24ADD4003C6C82 /* Build configuration list for PBXNativeTarget "Steamgames" */;
+			buildPhases = (
+				6BD62ECA79A6B45D96CB2B9E /* [CP] Check Pods Manifest.lock */,
+				C90B55AB2A24ADD3003C6C82 /* Sources */,
+				C90B55AC2A24ADD3003C6C82 /* Frameworks */,
+				C90B55AD2A24ADD3003C6C82 /* Resources */,
+				B77E25503BD93321B1922892 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Steamgames;
+			productName = Steamgames;
+			productReference = C90B55AF2A24ADD3003C6C82 /* Steamgames.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C90B55A72A24ADD3003C6C82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					C90B55AE2A24ADD3003C6C82 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = C90B55AA2A24ADD3003C6C82 /* Build configuration list for PBXProject "Steamgames" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C90B55A62A24ADD3003C6C82;
+			productRefGroup = C90B55B02A24ADD3003C6C82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C90B55AE2A24ADD3003C6C82 /* Steamgames */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C90B55AD2A24ADD3003C6C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90B55BF2A24ADD4003C6C82 /* LaunchScreen.storyboard in Resources */,
+				C90B55BC2A24ADD4003C6C82 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BD62ECA79A6B45D96CB2B9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Steamgames-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77E25503BD93321B1922892 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Steamgames/Pods-Steamgames-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Steamgames/Pods-Steamgames-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Steamgames/Pods-Steamgames-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C90B55AB2A24ADD3003C6C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90B55D22A24AF5F003C6C82 /* UIViewController+Extension.swift in Sources */,
+				C90B55F22A24CD99003C6C82 /* NewsStruct.swift in Sources */,
+				C90B55B32A24ADD3003C6C82 /* AppDelegate.swift in Sources */,
+				C90B55EE2A24B890003C6C82 /* Alerts.swift in Sources */,
+				C90B55DE2A24AFDB003C6C82 /* APIManager.swift in Sources */,
+				C90B55C72A24AE54003C6C82 /* GamesVC.swift in Sources */,
+				C90B55B52A24ADD3003C6C82 /* SceneDelegate.swift in Sources */,
+				C90B55F02A24CBFA003C6C82 /* NewsGameVC.swift in Sources */,
+				C90B55D82A24AF69003C6C82 /* Appearance.swift in Sources */,
+				C90B55D32A24AF5F003C6C82 /* UIViewCintroller+AnimateView.swift in Sources */,
+				C90B55E82A24B65B003C6C82 /* GameListStruct.swift in Sources */,
+				C90B55F42A24D126003C6C82 /* NewsCell.swift in Sources */,
+				C90B55E32A24B361003C6C82 /* UIView+Add.swift in Sources */,
+				C90B55F62A24D481003C6C82 /* DateFormated.swift in Sources */,
+				C90B55D72A24AF69003C6C82 /* Grid.swift in Sources */,
+				C90B55FA2A24DFF6003C6C82 /* WebVC.swift in Sources */,
+				C90B55EC2A24B79A003C6C82 /* URLs.swift in Sources */,
+				C90B55E22A24B361003C6C82 /* UIView + GAC.swift in Sources */,
+				C90B55D92A24AF69003C6C82 /* Constants.swift in Sources */,
+				C90B55EA2A24B706003C6C82 /* GameInteractor.swift in Sources */,
+				C90B55E62A24B571003C6C82 /* GameCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C90B55BD2A24ADD4003C6C82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90B55BE2A24ADD4003C6C82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C90B55C12A24ADD4003C6C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C90B55C22A24ADD4003C6C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C90B55C42A24ADD4003C6C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 755310DB8C96D6E9F0CD63DE /* Pods-Steamgames.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FHU3PU7LHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Steamgames/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rr.Steamgames;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C90B55C52A24ADD4003C6C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB1735C0E710F106A780F3E3 /* Pods-Steamgames.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FHU3PU7LHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Steamgames/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = rr.Steamgames;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C90B55AA2A24ADD3003C6C82 /* Build configuration list for PBXProject "Steamgames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90B55C12A24ADD4003C6C82 /* Debug */,
+				C90B55C22A24ADD4003C6C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90B55C32A24ADD4003C6C82 /* Build configuration list for PBXNativeTarget "Steamgames" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90B55C42A24ADD4003C6C82 /* Debug */,
+				C90B55C52A24ADD4003C6C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C90B55A72A24ADD3003C6C82 /* Project object */;
+}
